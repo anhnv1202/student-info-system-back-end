@@ -2,7 +2,6 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from faker import Faker
 import pandas as pd
 from datetime import datetime, timedelta
 from app.database import SessionLocal, engine, Base
@@ -14,69 +13,6 @@ CSV_DIR = os.path.join(BASE_DIR, 'csvdata')
 
 # Create tables
 Base.metadata.create_all(bind=engine)
-
-# fake = Faker(['vi_VN'])  # Vietnamese locale
-
-# # Vietnamese hometown list
-# HOMETOWNS = [
-#     "Hà Nội", "Hồ Chí Minh", "Đà Nẵng", "Cần Thơ", "Thanh Hóa",
-#     "Thái Bình", "Nam Định", "Quảng Ninh", "Thái Nguyên", "Lào Cai"
-# ]
-
-# def generate_student_code(index):
-#     """Generate student code in format SV + year + sequential number"""
-#     current_year = datetime.now().year
-#     return f"SV{current_year}{str(index).zfill(4)}"
-
-# def generate_random_score():
-#     """Generate random score between 0 and 10, or None (missing data)"""
-#     if random.random() < 0.15:  # 15% chance of missing data
-#         return None
-#     return round(random.uniform(0, 10), 2)
-
-# def generate_students(count=100):
-#     """Generate sample student data"""
-#     students = []
-    
-#     for i in range(1, count + 1):
-#         # Random chance of missing data for each field
-#         missing_first_name = random.random() < 0.05  # 5% missing
-#         missing_last_name = random.random() < 0.03   # 3% missing
-#         missing_email = random.random() < 0.10       # 10% missing
-#         missing_dob = random.random() < 0.08         # 8% missing
-#         missing_hometown = random.random() < 0.12    # 12% missing
-        
-#         first_name = None if missing_first_name else fake.first_name()
-#         last_name = None if missing_last_name else fake.last_name()
-        
-#         # Generate email based on name if available
-#         if missing_email or missing_first_name or missing_last_name:
-#             email = None
-#         else:
-#             email = f"{first_name.lower()}.{last_name.lower()}{random.randint(1, 999)}@student.edu.vn"
-        
-#         # Generate date of birth (18-25 years old)
-#         if missing_dob:
-#             dob = None
-#         else:
-#             age = random.randint(18, 25)
-#             days_offset = random.randint(0, 365)
-#             dob = datetime.now() - timedelta(days=age*365 + days_offset)
-        
-#         student = Student(
-#             student_code=generate_student_code(i),
-#             first_name=first_name,
-#             last_name=last_name,
-#             email=email,
-#             date_of_birth=dob.date() if dob else None,
-#             hometown=None if missing_hometown else random.choice(HOMETOWNS),
-#             math_score=generate_random_score(),
-#             literature_score=generate_random_score(),
-#             english_score=generate_random_score()
-#         )
-#         students.append(student)
-    
-#     return students
 
 def insert_cleaned_data_to_db(cleaned_csv_path):
     df = pd.read_csv(cleaned_csv_path)
@@ -122,8 +58,6 @@ def main():
         output_path = os.path.join(CSV_DIR, "cleaned_data.csv")
         clean_student_data(input_path, output_path)
         students = insert_cleaned_data_to_db(output_path)
-        print("\n\n\n students after cleaning : \n\n\n")
-        print(students)
         db.bulk_save_objects(students)
         db.commit()
         
