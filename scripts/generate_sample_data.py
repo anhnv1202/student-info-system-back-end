@@ -2,87 +2,46 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from faker import Faker
-import random
 import pandas as pd
 from datetime import datetime, timedelta
 from app.database import SessionLocal, engine, Base
 from app.models import Student
+from analysis.clean_data import clean_student_data
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+CSV_DIR = os.path.join(BASE_DIR, 'csvdata')
 
 # Create tables
 Base.metadata.create_all(bind=engine)
 
-fake = Faker(['vi_VN'])  # Vietnamese locale
-
-# Vietnamese hometown list
-HOMETOWNS = [
-    "Hà Nội", "Hồ Chí Minh", "Đà Nẵng", "Hải Phòng", "Cần Thơ",
-    "Nghệ An", "Thanh Hóa", "Thái Bình", "Nam Định", "Hải Dương",
-    "Quảng Ninh", "Bắc Ninh", "Bắc Giang", "Vĩnh Phúc", "Phú Thọ",
-    "Hưng Yên", "Hà Nam", "Ninh Bình", "Thái Nguyên", "Lào Cai",
-    "Yên Bái", "Tuyên Quang", "Hà Giang", "Cao Bằng", "Lạng Sơn",
-    "Quảng Bình", "Quảng Trị", "Thừa Thiên Huế", "Quảng Nam", "Quảng Ngãi",
-    "Bình Định", "Phú Yên", "Khánh Hòa", "Ninh Thuận", "Bình Thuận",
-    "Kon Tum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "Lâm Đồng",
-    "Bình Phước", "Tây Ninh", "Bình Dương", "Đồng Nai", "Bà Rịa - Vũng Tàu",
-    "Long An", "Tiền Giang", "Bến Tre", "Trà Vinh", "Vĩnh Long",
-    "Đồng Tháp", "An Giang", "Kiên Giang", "Hậu Giang", "Sóc Trăng",
-    "Bạc Liêu", "Cà Mau"
-]
-
-def generate_student_code(index):
-    """Generate student code in format SV + year + sequential number"""
-    current_year = datetime.now().year
-    return f"SV{current_year}{str(index).zfill(4)}"
-
-def generate_random_score():
-    """Generate random score between 0 and 10, or None (missing data)"""
-    if random.random() < 0.15:  # 15% chance of missing data
-        return None
-    return round(random.uniform(0, 10), 2)
-
-def generate_students(count=100):
-    """Generate sample student data"""
+def insert_cleaned_data_to_db(cleaned_csv_path):
+    df = pd.read_csv(cleaned_csv_path)
     students = []
-    
-    for i in range(1, count + 1):
-        # Random chance of missing data for each field
-        missing_first_name = random.random() < 0.05  # 5% missing
-        missing_last_name = random.random() < 0.03   # 3% missing
-        missing_email = random.random() < 0.10       # 10% missing
-        missing_dob = random.random() < 0.08         # 8% missing
-        missing_hometown = random.random() < 0.12    # 12% missing
-        
-        first_name = None if missing_first_name else fake.first_name()
-        last_name = None if missing_last_name else fake.last_name()
-        
-        # Generate email based on name if available
-        if missing_email or missing_first_name or missing_last_name:
-            email = None
-        else:
-            email = f"{first_name.lower()}.{last_name.lower()}{random.randint(1, 999)}@student.edu.vn"
-        
-        # Generate date of birth (18-25 years old)
-        if missing_dob:
-            dob = None
-        else:
-            age = random.randint(18, 25)
-            days_offset = random.randint(0, 365)
-            dob = datetime.now() - timedelta(days=age*365 + days_offset)
-        
+    for _, row in df.iterrows():
+        try:
+            date_of_birth = datetime.strptime(str(row['date_of_birth']), "%Y-%m-%d").date()
+        except Exception:
+            date_of_birth = None
+
+        # Split fullname 
+        full_name = str(row.get('full_name', '')).strip()
+        parts = full_name.split(' ')
+        first_name = parts[-1] if len(parts) > 0 else None
+        last_name = ' '.join(parts[:-1]) if len(parts) > 1 else None
+
         student = Student(
-            student_code=generate_student_code(i),
+            student_code=row.get('student_code'),
             first_name=first_name,
             last_name=last_name,
-            email=email,
-            date_of_birth=dob.date() if dob else None,
-            hometown=None if missing_hometown else random.choice(HOMETOWNS),
-            math_score=generate_random_score(),
-            literature_score=generate_random_score(),
-            english_score=generate_random_score()
+            email=row.get('email'),
+            date_of_birth=date_of_birth,
+            hometown=row.get('hometown'),
+            math_score=row.get('math_score'),
+            literature_score=row.get('literature_score'),
+            english_score=row.get('english_score')
         )
         students.append(student)
-    
+
     return students
 
 def main():
@@ -95,7 +54,10 @@ def main():
         db.commit()
         
         # Generate and insert students
-        students = generate_students(100)
+        input_path = os.path.join(CSV_DIR, "sample_data.csv")
+        output_path = os.path.join(CSV_DIR, "cleaned_data.csv")
+        clean_student_data(input_path, output_path)
+        students = insert_cleaned_data_to_db(output_path)
         db.bulk_save_objects(students)
         db.commit()
         
@@ -128,7 +90,8 @@ def main():
         print(df.head(10).to_string())
         
         # Export to CSV
-        df.to_csv('students_data.csv', index=False, encoding='utf-8-sig')
+        csv_to_export = os.path.join(CSV_DIR, "students_data.csv")
+        df.to_csv(csv_to_export, index=False, encoding='utf-8-sig')
         print(f"\nData exported to students_data.csv")
         
     except Exception as e:

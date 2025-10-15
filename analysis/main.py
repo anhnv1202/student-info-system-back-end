@@ -1,9 +1,13 @@
 from clean_data import clean_student_data
 from analysis_data import analysis_data
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+CSV_DIR = os.path.join(BASE_DIR, 'csvdata')
 
 def main():
-    input_csv = "danh_sach_sinh_vien.csv"
-    cleaned_csv = "cleaned_student_data.csv"
+    input_csv = os.path.join(CSV_DIR, "sample_data.csv")
+    cleaned_csv = os.path.join(CSV_DIR, "cleaned_data.csv")
 
     print("--- Starting Data Cleaning ---")
     clean_student_data(input_csv, cleaned_csv)
