@@ -1,6 +1,10 @@
+import os
+
 import pandas as pd
 
-def clean_student_data(input_filepath, output_filepath):
+CSV_OUTPUT = 'cleaned_students_data.csv'
+
+def clean_student_data(input_filepath):
 
     try:
         # Read file / inspect dataprint / print first 5 rows
@@ -9,6 +13,10 @@ def clean_student_data(input_filepath, output_filepath):
         print(df.info())
         print("\nFirst 5 rows of original data:")
         print(df.head())
+
+        # Drop unnecessary columns if exist
+        unnecessary_columns = ['STT', 'Actions']
+        df.drop(columns=[col for col in unnecessary_columns if col in df.columns], inplace=True)
 
         # Drop column with too many NaNs(> 50% data is NaN)
         columns_to_drop = df.columns[df.isnull().mean() > 0.5]
@@ -46,8 +54,8 @@ def clean_student_data(input_filepath, output_filepath):
             df.dropna(subset=score_columns, how='all', inplace=True)
 
             # Fill missing values (NaN) with the mean of the column
-            # mean_score = df[col].mean()
-            # df[col].fillna(mean_score, inplace=True)
+            mean_score = df[col].mean()
+            df[col].fillna(mean_score, inplace=True)
 
             df[col] = df[col].round(2)
 
@@ -64,16 +72,14 @@ def clean_student_data(input_filepath, output_filepath):
         print(df.head())
 
         #  Save to a new CSV file
-        df.to_csv(output_filepath, index=False, encoding='utf-8-sig')
+        raw_data_dir = os.path.join(os.path.dirname(__file__), 'cleaned_data')
+        os.makedirs(raw_data_dir, exist_ok=True)
+        output_csv = os.path.join(raw_data_dir, CSV_OUTPUT)
+        df.to_csv(output_csv, index=False, encoding='utf-8-sig')
 
-        print(f"\n✅ Data cleaning complete. Cleaned file saved to '{output_filepath}'")
-
+        print(f"\n✅ Data cleaning complete. Cleaned file saved to '{output_csv}'")
+        return output_csv
     except FileNotFoundError:
         print(f"Error: The file '{input_filepath}' was not found.")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
-
-
-if __name__ == '__main__':
-    clean_student_data("danh_sach_sinh_vien.csv", "cleaned_student_data.csv")
-

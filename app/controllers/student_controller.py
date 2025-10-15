@@ -4,7 +4,7 @@ Lớp xử lý HTTP requests/responses
 Định nghĩa các API endpoints và gọi service
 """
 
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, Query, Response
 from sqlalchemy.orm import Session
 from typing import Optional
 
@@ -17,6 +17,12 @@ from app.schemas import (
     StudentListResponse,
     MessageResponse
 )
+
+from app.crawling.clean_data import clean_student_data
+from app.crawling.students_crawl import crawl_students
+from app.crawling.analysis_data import analysis_data
+import os
+from zipfile import ZipFile
 
 # Tạo router cho student endpoints
 router = APIRouter(
@@ -287,4 +293,31 @@ def bulk_create_students(
     service = StudentService(db)
     message = service.bulk_create_students(students)
     return MessageResponse(message=message)
+
+
+@router.post("/crawl-students")
+def crawl_students_api():
+    # Step 1: Crawl data and export to CSV
+    url = os.getenv("STUDENTS_URL", "http://localhost:3000/students")
+    raw_filename = crawl_students(url)
+
+    # Step 2: Clean data
+    cleaned_filename = clean_student_data(raw_filename)
+
+    # Step 3: Analyze data and export images
+    analysis_data(cleaned_filename)
+
+    # Step 4: Zip images
+    image_dir = os.path.join("app", "crawling", "results")
+    zip_path = "exported_images.zip"
+    with ZipFile(zip_path, "w") as zipf:
+        for root, _, files in os.walk(image_dir):
+            for file in files:
+                zipf.write(os.path.join(root, file), arcname=file)
+
+    # Step 5: Return zip file
+    with open(zip_path, "rb") as f:
+        zip_bytes = f.read()
+    os.remove(zip_path)
+    return Response(content=zip_bytes, media_type="application/zip")
 
