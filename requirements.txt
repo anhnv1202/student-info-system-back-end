@@ -1,12 +1,23 @@
-selenium
-matplotlib
-PyQt5
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-sqlalchemy==2.0.23
-pydantic==2.5.0
-python-dotenv==1.0.0
-pandas>=2.2.0
-faker==20.1.0
-python-multipart==0.0.6
+# Core FastAPI dependencies
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
 
+# Database
+sqlalchemy==2.0.36
+
+# Data validation
+pydantic==2.9.2
+typing-extensions==4.12.2
+
+# Utilities
+python-dotenv==1.0.1
+faker==30.8.2
+
+# Data analysis (with specific versions for Python 3.13 compatibility)
+pandas==2.2.3
+numpy==2.1.2
+matplotlib==3.9.2
+
+# GUI (optional - comment out if not needed)
+# PyQt5==5.15.11
