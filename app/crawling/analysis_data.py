@@ -24,7 +24,7 @@ def plot_avgscore_by_hometown_and_subject(df, dir, filename):
     plt.legend(title="Subject", loc='upper left', bbox_to_anchor=(1.02, 1), borderaxespad=0)
     plt.tight_layout()
     plt.savefig(os.path.join(dir, filename))
-    plt.show()
+    # plt.show()
 
 def plot_avgscore_and_ages(df, dir, filename):
     # Add column age
@@ -56,7 +56,7 @@ def plot_avgscore_and_ages(df, dir, filename):
     plt.grid(alpha=0.3)
     plt.xticks(df_age['age'])
     plt.savefig(os.path.join(dir, filename))
-    plt.show()
+    # plt.show()
 
 def plot_correlation_matrix(df, dir, filename):
     corr = df.corr(numeric_only=True)
@@ -64,7 +64,7 @@ def plot_correlation_matrix(df, dir, filename):
     sns.heatmap(corr, annot=True, cmap='coolwarm', center=0, linewidths=0.5)
     plt.title("Correlation Matrix between Scores and other factors")
     plt.savefig(os.path.join(dir, filename))
-    plt.show()
+    # plt.show()
 
 def plot_score_box(df, dir, filename):
     ax = df[['math_score', 'literature_score', 'english_score']].plot.box(figsize=(8, 6))
@@ -76,7 +76,7 @@ def plot_score_box(df, dir, filename):
     ax.grid(axis='y')
 
     plt.savefig(os.path.join(dir, filename))
-    plt.show()
+    # plt.show()
 
 def plot_score_scatter(df, dir, filename):
     ax = df.plot.scatter(x='math_score', y='english_score', alpha=0.5, figsize=(8, 6))
@@ -86,7 +86,7 @@ def plot_score_scatter(df, dir, filename):
     ax.grid(True)
 
     plt.savefig(os.path.join(dir, filename))
-    plt.show()
+    # plt.show()
 
 def plot_avg_english_by_hometown(df, dir, filename):
 
@@ -102,7 +102,7 @@ def plot_avg_english_by_hometown(df, dir, filename):
     plt.tight_layout()
 
     plt.savefig(os.path.join(dir, filename))
-    plt.show()
+    # plt.show()
 
 def analysis_data(input_filepath):
     img_dir = 'img'
