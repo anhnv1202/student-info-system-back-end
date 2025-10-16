@@ -308,7 +308,7 @@ def crawl_students_api():
     analysis_data(cleaned_filename)
 
     # Step 4: Zip images
-    image_dir = os.path.join("app", "crawling", "results")
+    image_dir = os.path.join("app", "crawling", "img")
     zip_path = "exported_images.zip"
     with ZipFile(zip_path, "w") as zipf:
         for root, _, files in os.walk(image_dir):
