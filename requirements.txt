@@ -2,8 +2,9 @@ matplotlib
 PyQt5
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
-sqlalchemy==2.0.23
+sqlalchemy==2.0.36
 pydantic==2.5.0
+typing-extensions==4.8.0
 python-dotenv==1.0.0
 pandas>=2.2.0
 faker==20.1.0
