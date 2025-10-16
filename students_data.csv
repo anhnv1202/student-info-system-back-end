@@ -1,101 +1,101 @@
 ﻿student_code,first_name,last_name,email,date_of_birth,hometown,math_score,literature_score,english_score
-SV20250001,Jane,Dương,jane.dương594@student.edu.vn,2003-06-23,Nghệ An,,7.0,
-SV20250002,John,,,2000-03-10,Quảng Ninh,4.85,1.77,1.08
-SV20250003,John,Phạm,john.phạm814@student.edu.vn,1999-12-07,Bình Dương,7.43,7.5,9.12
-SV20250004,Jane,Bùi,jane.bùi610@student.edu.vn,2006-10-05,Bình Dương,8.52,2.66,3.67
-SV20250005,,Đặng,,2005-04-16,Nghệ An,5.31,9.05,1.14
-SV20250006,Jane,Đặng,jane.đặng563@student.edu.vn,2003-12-10,Thái Bình,,6.26,6.11
-SV20250007,Jane,Hoàng,jane.hoàng512@student.edu.vn,2006-10-10,Bến Tre,2.84,3.18,2.1
-SV20250008,Jane,Lê,,2000-01-18,Phú Yên,7.96,4.41,5.11
-SV20250009,Jane,Mai,jane.mai399@student.edu.vn,2006-10-27,Quảng Ngãi,3.83,8.44,6.21
-SV20250010,John,Nguyễn,john.nguyễn734@student.edu.vn,,Hà Nam,8.84,0.79,8.03
-SV20250011,John,Lê,john.lê586@student.edu.vn,2005-09-10,Đắk Nông,,0.43,7.52
-SV20250012,John,Phạm,john.phạm807@student.edu.vn,2000-12-03,Quảng Nam,,2.94,5.04
-SV20250013,Jane,Dương,jane.dương332@student.edu.vn,2004-03-02,Hà Giang,4.54,8.42,0.1
-SV20250014,John,Hoàng,john.hoàng804@student.edu.vn,2003-09-18,Cần Thơ,,,6.79
-SV20250015,Jane,Trần,jane.trần770@student.edu.vn,2000-11-07,Sóc Trăng,2.79,2.65,
-SV20250016,Jane,Nguyễn,jane.nguyễn199@student.edu.vn,2006-08-07,,5.39,1.02,3.17
-SV20250017,Jane,Vũ,,2001-11-28,Đà Nẵng,2.26,2.61,7.22
-SV20250018,Jane,Mai,jane.mai998@student.edu.vn,1999-11-24,Tiền Giang,2.8,,9.18
-SV20250019,Jane,Nguyễn,jane.nguyễn920@student.edu.vn,2004-02-25,Quảng Trị,8.6,,9.98
-SV20250020,John,Trần,john.trần94@student.edu.vn,2002-09-09,Bến Tre,0.1,5.73,6.85
-SV20250021,John,Phạm,john.phạm310@student.edu.vn,2003-09-14,Kon Tum,0.84,4.62,6.01
-SV20250022,John,Đặng,john.đặng602@student.edu.vn,2004-06-10,Bình Định,8.88,1.47,
-SV20250023,John,,,2006-06-20,Phú Thọ,9.57,,8.82
-SV20250024,John,Đặng,john.đặng457@student.edu.vn,2000-03-18,Lạng Sơn,8.86,7.74,8.36
-SV20250025,John,Dương,john.dương939@student.edu.vn,2002-04-10,Đắk Lắk,5.78,7.89,7.99
-SV20250026,John,Nguyễn,john.nguyễn897@student.edu.vn,2003-03-26,,2.97,,5.01
-SV20250027,John,Hoàng,john.hoàng605@student.edu.vn,2007-04-23,,8.14,,4.84
-SV20250028,Jane,Vũ,jane.vũ547@student.edu.vn,2002-01-29,Cà Mau,2.04,7.14,9.93
-SV20250029,Jane,Phạm,jane.phạm770@student.edu.vn,2000-12-20,Lào Cai,5.17,5.82,3.11
-SV20250030,,Lê,,2001-01-25,Long An,1.53,,2.32
-SV20250031,Jane,Trần,jane.trần137@student.edu.vn,2005-03-31,Hồ Chí Minh,8.89,8.45,2.06
-SV20250032,Jane,Lê,jane.lê381@student.edu.vn,2004-07-30,,,5.26,4.25
-SV20250033,Jane,Đặng,jane.đặng388@student.edu.vn,2004-04-13,Bến Tre,9.47,5.9,7.44
-SV20250034,John,Vũ,john.vũ9@student.edu.vn,2006-05-03,Sóc Trăng,1.97,5.66,4.82
-SV20250035,,Hoàng,,2000-01-27,Vĩnh Phúc,2.12,7.87,5.2
-SV20250036,Jane,Phạm,jane.phạm251@student.edu.vn,2002-03-16,Bạc Liêu,8.51,1.42,2.58
-SV20250037,Jane,Vũ,,2000-03-17,Ninh Thuận,4.43,,4.53
-SV20250038,Jane,Vũ,jane.vũ531@student.edu.vn,2003-07-28,Tiền Giang,3.27,5.67,8.18
-SV20250039,Jane,Đặng,,2000-06-18,Lâm Đồng,1.48,,0.45
-SV20250040,Jane,Nguyễn,jane.nguyễn445@student.edu.vn,2000-07-11,Ninh Thuận,3.32,2.34,9.29
-SV20250041,Jane,Bùi,jane.bùi31@student.edu.vn,2000-05-06,Đồng Nai,3.99,5.43,0.15
-SV20250042,Jane,Đặng,jane.đặng826@student.edu.vn,2004-05-21,Vĩnh Long,,0.85,3.95
-SV20250043,John,Phạm,john.phạm937@student.edu.vn,2002-07-10,Hà Nội,6.6,1.23,1.58
-SV20250044,Jane,Mai,jane.mai971@student.edu.vn,2001-02-25,Bạc Liêu,1.03,,
-SV20250045,John,Dương,john.dương343@student.edu.vn,2003-07-03,Yên Bái,4.88,,5.1
-SV20250046,John,Mai,john.mai299@student.edu.vn,2003-01-19,Lâm Đồng,1.87,5.45,2.52
-SV20250047,Jane,Trần,jane.trần308@student.edu.vn,2000-05-16,Tuyên Quang,8.52,3.06,
-SV20250048,,Đặng,,2007-04-28,Tuyên Quang,8.92,4.57,
-SV20250049,John,Dương,john.dương165@student.edu.vn,2003-04-15,Ninh Bình,9.91,2.5,
-SV20250050,John,Bùi,john.bùi505@student.edu.vn,2003-06-03,Quảng Ngãi,4.12,,
-SV20250051,John,Bùi,,2001-10-15,Đà Nẵng,,,4.03
-SV20250052,John,Đặng,john.đặng897@student.edu.vn,2004-03-08,Lào Cai,4.63,1.75,1.1
-SV20250053,John,Phạm,john.phạm847@student.edu.vn,2000-07-15,Thanh Hóa,,4.5,0.81
-SV20250054,Jane,Nguyễn,jane.nguyễn439@student.edu.vn,2005-11-07,Yên Bái,,8.48,
-SV20250055,Jane,Bùi,jane.bùi640@student.edu.vn,2000-12-23,Thái Nguyên,,7.31,
-SV20250056,Jane,Vũ,jane.vũ548@student.edu.vn,2000-05-02,Bình Định,,6.47,8.05
-SV20250057,,Vũ,,2007-06-05,Cao Bằng,,4.5,0.17
-SV20250058,John,Mai,john.mai554@student.edu.vn,2006-01-15,Đắk Nông,,6.19,0.28
-SV20250059,John,Hoàng,john.hoàng51@student.edu.vn,,Hậu Giang,5.14,6.24,5.99
-SV20250060,John,Vũ,john.vũ918@student.edu.vn,2007-04-29,Đồng Nai,7.19,5.59,7.8
-SV20250061,John,Phạm,john.phạm710@student.edu.vn,2005-06-28,Đồng Tháp,3.72,1.18,5.67
-SV20250062,,Nguyễn,,2001-09-06,Bà Rịa - Vũng Tàu,0.18,5.29,8.7
-SV20250063,Jane,Lê,jane.lê47@student.edu.vn,2005-09-27,An Giang,9.15,6.45,0.36
-SV20250064,John,Đặng,john.đặng233@student.edu.vn,2001-04-26,Lâm Đồng,5.13,2.58,2.81
-SV20250065,Jane,Hoàng,jane.hoàng687@student.edu.vn,,Thanh Hóa,5.51,,1.1
-SV20250066,Jane,Bùi,jane.bùi138@student.edu.vn,,Lào Cai,8.48,5.49,8.12
-SV20250067,John,Hoàng,john.hoàng345@student.edu.vn,2002-03-30,Nghệ An,2.66,2.56,4.21
-SV20250068,John,Hoàng,john.hoàng94@student.edu.vn,2001-03-11,Trà Vinh,9.34,4.62,2.21
-SV20250069,,Lê,,2007-10-11,Bạc Liêu,2.69,7.56,4.55
-SV20250070,Jane,Trần,jane.trần433@student.edu.vn,,Quảng Nam,0.64,0.38,9.05
-SV20250071,Jane,Bùi,jane.bùi79@student.edu.vn,2004-08-05,Bắc Giang,4.18,3.25,0.05
-SV20250072,John,Vũ,john.vũ274@student.edu.vn,2000-03-19,Bắc Ninh,8.55,5.5,0.14
-SV20250073,John,Trần,john.trần399@student.edu.vn,2005-07-08,Phú Yên,2.09,5.64,5.61
-SV20250074,Jane,Phạm,,2006-03-15,Kiên Giang,,2.11,6.66
-SV20250075,Jane,Lê,jane.lê90@student.edu.vn,2000-10-01,Lạng Sơn,5.29,4.23,
-SV20250076,Jane,Trần,jane.trần544@student.edu.vn,2003-01-19,,1.1,3.26,
-SV20250077,Jane,Trần,jane.trần748@student.edu.vn,2006-11-19,Cần Thơ,7.74,1.85,1.42
-SV20250078,Jane,Dương,jane.dương233@student.edu.vn,2002-08-13,Thái Nguyên,3.76,2.18,0.76
-SV20250079,John,Hoàng,john.hoàng582@student.edu.vn,2003-02-15,Bạc Liêu,2.83,,1.08
-SV20250080,John,Hoàng,john.hoàng395@student.edu.vn,2006-10-11,Đồng Nai,8.61,0.69,7.96
-SV20250081,Jane,Dương,jane.dương195@student.edu.vn,2001-06-02,Phú Thọ,0.21,9.79,
-SV20250082,Jane,Trần,jane.trần739@student.edu.vn,2005-09-01,Quảng Nam,1.84,7.6,3.36
-SV20250083,Jane,,,2000-08-16,Lào Cai,9.39,4.53,2.66
-SV20250084,John,Phạm,john.phạm330@student.edu.vn,2007-08-22,Đồng Nai,5.58,1.57,6.08
-SV20250085,Jane,Phạm,jane.phạm132@student.edu.vn,2006-09-21,Hải Dương,,7.94,8.92
-SV20250086,Jane,Mai,jane.mai661@student.edu.vn,2006-03-01,Bắc Ninh,8.35,0.76,4.44
-SV20250087,Jane,Trần,jane.trần490@student.edu.vn,1999-12-15,Kon Tum,3.14,7.19,
-SV20250088,John,Trần,john.trần916@student.edu.vn,2002-08-12,Gia Lai,0.1,1.48,3.46
-SV20250089,John,Đặng,john.đặng59@student.edu.vn,2006-11-12,Bến Tre,,3.45,1.86
-SV20250090,Jane,Mai,jane.mai600@student.edu.vn,2000-05-01,Phú Yên,9.04,4.88,1.31
-SV20250091,Jane,Đặng,jane.đặng856@student.edu.vn,2000-10-29,An Giang,9.08,7.96,4.03
-SV20250092,John,Bùi,john.bùi606@student.edu.vn,2004-06-24,Cần Thơ,9.76,0.14,6.7
-SV20250093,John,Trần,john.trần639@student.edu.vn,2000-04-19,Phú Thọ,6.96,3.52,4.54
-SV20250094,Jane,Nguyễn,jane.nguyễn590@student.edu.vn,,Hải Phòng,,3.31,
-SV20250095,Jane,,,2000-11-05,Quảng Nam,7.2,1.41,
-SV20250096,Jane,Trần,,2003-07-04,Vĩnh Phúc,5.63,5.21,5.09
-SV20250097,Jane,Hoàng,jane.hoàng344@student.edu.vn,2006-01-30,Lào Cai,3.63,6.5,2.89
-SV20250098,Jane,Dương,jane.dương590@student.edu.vn,2002-12-16,Thanh Hóa,6.18,9.74,
-SV20250099,Jane,Trần,jane.trần803@student.edu.vn,2001-09-21,Hồ Chí Minh,3.52,1.32,9.51
-SV20250100,John,Phạm,john.phạm406@student.edu.vn,2006-06-12,Ninh Bình,2.1,,8.5
+SV20250001,Jane,Phạm,jane.phạm537@student.edu.vn,2001-07-20,Hà Giang,3.67,7.41,8.89
+SV20250002,John,Nguyễn,john.nguyễn792@student.edu.vn,2003-09-14,,8.96,3.41,5.79
+SV20250003,Jane,Phạm,,2001-05-06,Đắk Nông,7.0,3.08,1.0
+SV20250004,John,Trần,john.trần975@student.edu.vn,2004-03-01,Ninh Thuận,9.11,3.5,2.37
+SV20250005,John,,,2004-01-08,Thái Bình,8.09,7.93,3.76
+SV20250006,John,Lê,john.lê623@student.edu.vn,2001-04-07,Quảng Bình,0.74,7.4,7.66
+SV20250007,John,Nguyễn,john.nguyễn163@student.edu.vn,2005-10-31,Kon Tum,,0.54,6.49
+SV20250008,John,Mai,john.mai888@student.edu.vn,2000-08-05,,9.19,8.65,0.43
+SV20250009,John,Hoàng,john.hoàng577@student.edu.vn,2004-02-19,Quảng Nam,6.89,0.18,2.56
+SV20250010,Jane,Trần,,2002-10-06,Hậu Giang,6.65,,7.09
+SV20250011,John,Lê,john.lê630@student.edu.vn,2001-12-11,Nam Định,,4.86,1.69
+SV20250012,Jane,Phạm,jane.phạm622@student.edu.vn,2004-10-23,Quảng Ninh,8.61,8.7,
+SV20250013,Jane,Lê,,2007-09-12,Sóc Trăng,9.88,5.31,6.85
+SV20250014,Jane,Hoàng,jane.hoàng714@student.edu.vn,2007-01-02,Quảng Nam,9.3,0.96,5.49
+SV20250015,Jane,Phạm,jane.phạm405@student.edu.vn,2006-12-08,Đà Nẵng,6.34,7.82,4.27
+SV20250016,John,Vũ,john.vũ518@student.edu.vn,2004-09-15,,5.86,5.57,2.21
+SV20250017,John,Vũ,john.vũ302@student.edu.vn,2004-08-16,Kon Tum,9.2,1.19,4.82
+SV20250018,,Hoàng,,2000-10-16,Nam Định,,2.78,8.23
+SV20250019,John,Đặng,john.đặng652@student.edu.vn,2004-11-26,,7.57,7.04,1.49
+SV20250020,John,Mai,john.mai982@student.edu.vn,2002-05-26,,7.68,6.28,1.32
+SV20250021,Jane,Bùi,jane.bùi513@student.edu.vn,2006-01-10,Hưng Yên,6.71,4.09,6.88
+SV20250022,John,Vũ,john.vũ984@student.edu.vn,2000-05-27,Đồng Nai,2.08,8.33,
+SV20250023,John,Đặng,john.đặng10@student.edu.vn,2004-03-18,Lâm Đồng,0.95,4.87,8.28
+SV20250024,Jane,Đặng,jane.đặng508@student.edu.vn,2006-03-03,Quảng Trị,2.44,3.57,9.44
+SV20250025,Jane,Mai,jane.mai93@student.edu.vn,2006-02-28,Lào Cai,9.04,7.57,3.35
+SV20250026,John,Trần,john.trần618@student.edu.vn,2007-09-01,Đắk Lắk,6.45,9.8,1.49
+SV20250027,Jane,Mai,jane.mai17@student.edu.vn,2000-09-26,Long An,4.91,,1.82
+SV20250028,John,Trần,john.trần349@student.edu.vn,2000-03-13,Lạng Sơn,2.82,7.24,4.05
+SV20250029,John,Hoàng,john.hoàng228@student.edu.vn,2006-01-23,Bến Tre,6.55,,1.97
+SV20250030,John,Phạm,john.phạm737@student.edu.vn,2005-08-16,,6.59,4.16,
+SV20250031,John,Phạm,john.phạm382@student.edu.vn,2006-12-06,Bình Phước,6.59,0.69,5.73
+SV20250032,,Hoàng,,2004-11-16,,3.89,,0.14
+SV20250033,John,Đặng,,2002-04-23,Vĩnh Phúc,,1.24,7.99
+SV20250034,John,Đặng,,2002-12-20,Đà Nẵng,9.56,4.81,9.75
+SV20250035,Jane,Dương,jane.dương154@student.edu.vn,2003-08-02,Khánh Hòa,4.15,1.89,
+SV20250036,Jane,Mai,jane.mai564@student.edu.vn,2003-11-24,,,9.83,7.87
+SV20250037,Jane,Bùi,,2003-07-02,Hải Dương,3.35,7.98,0.57
+SV20250038,John,Phạm,john.phạm286@student.edu.vn,2001-11-13,Cao Bằng,3.46,6.41,9.97
+SV20250039,John,Đặng,john.đặng311@student.edu.vn,2000-07-10,Quảng Ngãi,5.35,7.59,8.82
+SV20250040,John,Dương,john.dương725@student.edu.vn,2001-05-15,Thanh Hóa,9.31,8.97,5.4
+SV20250041,John,Nguyễn,john.nguyễn549@student.edu.vn,2007-10-20,Đồng Tháp,4.51,3.01,4.06
+SV20250042,Jane,Vũ,jane.vũ187@student.edu.vn,2002-04-14,,0.34,2.52,
+SV20250043,John,Nguyễn,john.nguyễn224@student.edu.vn,2006-03-01,Hải Phòng,5.53,4.53,3.44
+SV20250044,Jane,Dương,jane.dương441@student.edu.vn,2003-10-15,Hà Giang,9.28,7.91,2.05
+SV20250045,John,Phạm,john.phạm398@student.edu.vn,2003-03-13,Đắk Lắk,7.49,,0.82
+SV20250046,Jane,Vũ,jane.vũ337@student.edu.vn,2002-02-01,Lâm Đồng,9.86,3.16,0.59
+SV20250047,Jane,Bùi,jane.bùi726@student.edu.vn,2002-12-12,Đắk Nông,6.5,5.35,
+SV20250048,John,Phạm,john.phạm585@student.edu.vn,2001-03-28,Đồng Nai,6.38,,1.22
+SV20250049,Jane,Mai,jane.mai667@student.edu.vn,2001-09-04,Lào Cai,,7.08,5.01
+SV20250050,John,Trần,john.trần785@student.edu.vn,2004-01-03,Gia Lai,9.66,7.36,4.05
+SV20250051,Jane,Bùi,jane.bùi617@student.edu.vn,2005-11-26,Sóc Trăng,7.39,2.77,6.09
+SV20250052,John,Trần,john.trần332@student.edu.vn,2005-05-01,Long An,,2.73,9.73
+SV20250053,Jane,Lê,jane.lê773@student.edu.vn,2003-05-05,Đắk Nông,2.11,4.73,1.15
+SV20250054,Jane,Vũ,,2001-08-12,Cao Bằng,7.75,3.59,5.62
+SV20250055,Jane,Mai,jane.mai189@student.edu.vn,2004-07-26,Quảng Trị,,2.85,0.11
+SV20250056,John,Đặng,john.đặng773@student.edu.vn,2001-04-12,Thái Bình,,,5.14
+SV20250057,John,Vũ,john.vũ460@student.edu.vn,2004-11-17,Thái Nguyên,,9.64,5.22
+SV20250058,Jane,Trần,jane.trần356@student.edu.vn,2007-07-30,Đắk Nông,6.63,1.74,
+SV20250059,Jane,Hoàng,jane.hoàng360@student.edu.vn,2004-03-10,Bình Thuận,2.27,,8.46
+SV20250060,John,Vũ,john.vũ50@student.edu.vn,2002-10-03,Đồng Tháp,9.38,,2.66
+SV20250061,Jane,Vũ,jane.vũ11@student.edu.vn,,Lạng Sơn,,7.97,0.75
+SV20250062,Jane,Bùi,jane.bùi856@student.edu.vn,2002-10-23,Cao Bằng,,,7.64
+SV20250063,Jane,Nguyễn,jane.nguyễn234@student.edu.vn,2005-10-08,Hưng Yên,2.82,5.02,
+SV20250064,,Dương,,,Hậu Giang,7.07,5.74,5.37
+SV20250065,Jane,Vũ,jane.vũ702@student.edu.vn,2005-11-06,Sóc Trăng,3.1,1.19,2.24
+SV20250066,John,Phạm,john.phạm2@student.edu.vn,,Trà Vinh,3.98,2.88,9.62
+SV20250067,Jane,Hoàng,jane.hoàng731@student.edu.vn,2006-07-07,Bình Phước,2.23,,1.82
+SV20250068,Jane,,,2006-08-10,Phú Thọ,6.83,4.93,
+SV20250069,John,Dương,john.dương751@student.edu.vn,2000-01-27,Thanh Hóa,0.21,3.61,
+SV20250070,John,Trần,john.trần701@student.edu.vn,2000-10-27,Hải Phòng,1.72,3.49,9.42
+SV20250071,John,Hoàng,john.hoàng782@student.edu.vn,2000-12-22,Hà Nội,0.52,0.75,1.71
+SV20250072,John,Dương,john.dương81@student.edu.vn,2005-03-13,Cà Mau,7.21,9.39,0.14
+SV20250073,Jane,Đặng,,2005-12-05,Quảng Ninh,2.65,1.46,
+SV20250074,John,Dương,john.dương423@student.edu.vn,2004-12-21,Đắk Nông,8.87,4.2,0.62
+SV20250075,Jane,Hoàng,jane.hoàng993@student.edu.vn,2006-02-12,Vĩnh Long,0.25,4.49,
+SV20250076,Jane,Nguyễn,jane.nguyễn601@student.edu.vn,,Quảng Trị,8.9,,0.41
+SV20250077,John,Lê,,2004-03-25,,2.1,3.53,9.71
+SV20250078,John,Dương,john.dương952@student.edu.vn,2001-12-11,Phú Yên,1.46,5.62,8.9
+SV20250079,John,Phạm,john.phạm565@student.edu.vn,2000-02-14,Ninh Thuận,7.27,2.03,3.02
+SV20250080,Jane,Vũ,jane.vũ696@student.edu.vn,2006-07-06,Phú Yên,0.89,0.35,1.47
+SV20250081,,Nguyễn,,2006-11-04,Đồng Nai,1.54,0.7,1.43
+SV20250082,John,Mai,john.mai62@student.edu.vn,2005-05-04,Lạng Sơn,1.9,9.48,2.94
+SV20250083,John,Dương,john.dương392@student.edu.vn,2003-08-31,Thái Bình,0.65,8.58,3.78
+SV20250084,Jane,Phạm,jane.phạm93@student.edu.vn,2000-05-24,Bình Dương,9.73,0.24,6.4
+SV20250085,Jane,Dương,jane.dương361@student.edu.vn,2003-08-26,Hải Dương,3.36,7.31,0.52
+SV20250086,John,Trần,,2002-02-17,Lâm Đồng,1.05,,
+SV20250087,Jane,Vũ,jane.vũ736@student.edu.vn,2004-11-30,,5.84,8.77,0.03
+SV20250088,John,Trần,john.trần594@student.edu.vn,2004-12-20,Hải Dương,2.99,2.55,8.36
+SV20250089,Jane,Đặng,jane.đặng268@student.edu.vn,2003-12-07,Bắc Ninh,7.51,1.43,
+SV20250090,John,Trần,john.trần146@student.edu.vn,,Bình Phước,4.67,0.72,
+SV20250091,,Lê,,2006-11-26,Hà Nội,7.6,3.04,
+SV20250092,John,Nguyễn,john.nguyễn525@student.edu.vn,2005-10-23,Ninh Thuận,6.96,2.62,6.47
+SV20250093,John,Dương,john.dương39@student.edu.vn,2000-07-01,Quảng Bình,1.87,0.36,5.5
+SV20250094,John,Trần,john.trần774@student.edu.vn,2006-06-25,,4.15,2.94,1.65
+SV20250095,Jane,Phạm,jane.phạm515@student.edu.vn,2005-07-13,Tuyên Quang,2.39,2.47,6.85
+SV20250096,Jane,Vũ,jane.vũ703@student.edu.vn,2002-07-15,Bạc Liêu,2.4,6.12,
+SV20250097,John,Trần,john.trần987@student.edu.vn,2003-01-11,Khánh Hòa,0.83,8.19,8.0
+SV20250098,Jane,Dương,jane.dương533@student.edu.vn,2004-10-03,Long An,4.43,5.79,9.83
+SV20250099,John,Bùi,john.bùi358@student.edu.vn,2005-04-10,Tuyên Quang,3.29,,1.68
+SV20250100,Jane,Dương,jane.dương328@student.edu.vn,2007-01-01,Bình Phước,9.4,2.9,2.31

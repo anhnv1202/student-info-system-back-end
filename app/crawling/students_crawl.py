@@ -47,12 +47,14 @@ def write_to_csv(file_path, rows):
 def scrape_students(output_csv: str = CSV_OUTPUT):
     global driver
     try:
-        tbody_th = driver.find_elements(By.CSS_SELECTOR, '.student-list table thead tr th')
+        time.sleep(2)
+        tbody_th = driver.find_elements(By.CSS_SELECTOR, 'table thead tr th')
         headers = [th.text.strip() for th in tbody_th if th.text.strip()]
         write_to_csv(output_csv, [headers])
         rows_written = 0
         while True:
-            rows = driver.find_elements(By.CSS_SELECTOR, '.student-list table tbody tr')
+            time.sleep(3)
+            rows = driver.find_elements(By.CSS_SELECTOR, 'table tbody tr')
 
             page_rows = []
             for tr in rows:
@@ -69,7 +71,7 @@ def scrape_students(output_csv: str = CSV_OUTPUT):
 
             print(f"Wrote {len(page_rows)} rows (total {rows_written}).")
 
-            next_btn = driver.find_element(By.CLASS_NAME, "next-button")
+            next_btn = driver.find_element(By.XPATH, "//button[text()='Sau']")
 
             # If the button is disabled via attribute or not enabled, stop
             disabled_attr = next_btn.get_attribute('disabled')
