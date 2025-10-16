@@ -15,7 +15,7 @@ def clean_student_data(input_filepath):
         print(df.head())
 
         # Drop unnecessary columns if exist
-        unnecessary_columns = ['STT', 'Actions']
+        unnecessary_columns = ['STT', 'Thao tác', 'TB']
         df.drop(columns=[col for col in unnecessary_columns if col in df.columns], inplace=True)
 
         # Drop column with too many NaNs(> 50% data is NaN)
@@ -29,15 +29,14 @@ def clean_student_data(input_filepath):
             df[col] = df[col].str.strip()
 
         # Rename all columns
-        df.rename(columns={'Mã số sinh viên': 'student_code',
-                           'Họ': 'first_name',
-                           'Tên': 'last_name',
+        df.rename(columns={'Mã SV': 'student_code',
+                           'Họ tên': 'full_name',
                            'Email': 'email',
                            'Ngày sinh': 'date_of_birth',
                            'Quê quán': 'hometown',
-                           'Điểm Toán': 'math_score',
-                           'Điểm Văn': 'literature_score',
-                           'Điểm Tiếng Anh': 'english_score'
+                           'Toán': 'math_score',
+                           'Văn': 'literature_score',
+                           'Anh': 'english_score'
                            }, inplace=True)
 
         # Clean score columns
@@ -60,11 +59,11 @@ def clean_student_data(input_filepath):
             df[col] = df[col].round(2)
 
         # Adding new Features: Fullname & Avg_Score
-        df.insert(1, 'full_name', df['first_name'] + ' ' + df['last_name'])
-        df.drop(columns=['first_name', 'last_name'], inplace=True)
+        # df.insert(1, 'full_name', df['first_name'] + ' ' + df['last_name'])
+        # df.drop(columns=['first_name', 'last_name'], inplace=True)
 
-        # df['avg_score'] = df[score_columns].mean(axis=1)
-        # df['avg_score'] = df['avg_score'].round(2)
+        df['avg_score'] = df[score_columns].mean(axis=1)
+        df['avg_score'] = df['avg_score'].round(2)
 
         print("\n--- Data After Cleaning ---")
         print(df.info())
@@ -83,3 +82,8 @@ def clean_student_data(input_filepath):
         print(f"Error: The file '{input_filepath}' was not found.")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
+
+if __name__ == "__main__":
+    # Example usage
+    input_filepath = os.path.join(os.path.dirname(__file__), 'raw_data', 'raw_students_data.csv')
+    clean_student_data(input_filepath)

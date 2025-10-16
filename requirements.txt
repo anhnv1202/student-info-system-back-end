@@ -19,5 +19,7 @@ pandas==2.2.3
 numpy==2.1.2
 matplotlib==3.9.2
 
+# Clean Data
+selenium==4.36.0
 # GUI (optional - comment out if not needed)
 # PyQt5==5.15.11
